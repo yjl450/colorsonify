@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Sonification</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div id="audio1" onclick="playAudio1()" class="audioBox">
+	<p>#<br>F<br>7<br>C<br>2<br>4<br>2<br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fall<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gold</p>
+</div>
+<div id="audio2" onclick="playAudio2()" class="audioBox">
+	<p>#<br>C<br>1<br>0<br>B<br>0<br>B<br><br><br>Chinese<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Red</p>
+</div>
+<div id="audio3" onclick="playAudio3()" class="audioBox">
+	<p>#<br>1<br>B<br>8<br>1<br>3<br>E<br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jade<br>&nbsp;&nbsp;&nbsp;Green</p>
+</div>
+<div id="audio4" onclick="playAudio4()" class="audioBox">
+	<p>#<br>0<br>0<br>8<br>9<br>A<br>7<br><br><br>Techno<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blue</p>
+</div>
+<div id="audio5" onclick="playAudio5()" class="audioBox">
+	<p>#<br>6<br>F<br>3<br>3<br>8<br>1<br><br><br>&nbsp;&nbsp;Galaxy<br>&nbsp;&nbsp;&nbsp;Violet</p>
+</div>
+
+<audio src="audio/1.mp4" id="audioPlay1"></audio>
+<audio src="audio/2.mp4" id="audioPlay2"></audio>
+<audio src="audio/3.mp4" id="audioPlay3"></audio>
+<audio src="audio/4.mp4" id="audioPlay4"></audio>
+<audio src="audio/5.mp4" id="audioPlay5"></audio>
+
+<div id="bottom">
+	<h1><i>Color Sonification<br></i></h1>
+	<h4>Created By Steve & Helium</h4>
+	<h4>NYUSH IMA 2017</h4>
+</div>
+
+<script>
+	var clickTime1 = 0;
+	function playAudio1(){
+	clickTime1++;
+	console.log(clickTime1);
+	if(clickTime1==1){
+	document.getElementById('audioPlay1').play();
+	console.log(clickTime1);
+	document.getElementById("audio1").style.height="400px";
+	document.getElementById("audio1").style.width="100px";
+	document.getElementById("audio1").style.boxShadow="0px 0px 30px 2px #898989";
+	document.getElementById("audio1").style.fontSize="30px";
+	document.body.backgroundColor = "#f9de9d";
+	setTimeout("stop1()",36000);
+	}
+	if(clickTime1 == 2){
+	stop1();
+	}
+}
+
+function stop1(){
+	document.getElementById('audioPlay1').pause();
+	document.getElementById('audioPlay1').currentTime=0;
+	clickTime1 = 0;
+	document.getElementById("audio1").style.height="100px";
+	document.getElementById("audio1").style.width="80px";
+	document.getElementById("audio1").style.boxShadow="0px 0px 20px 10px #898989";
+	document.getElementById("audio1").style.fontSize="10px";
+	}
+</script>
+
+<script>
+	var clickTime2 = 0;
+	function playAudio2(){
+	clickTime2++;
+	console.log(clickTime2);
+	if(clickTime2==1){
+	document.getElementById('audioPlay2').play();
+	console.log(clickTime2);
+	document.getElementById("audio2").style.height="400px";
+	document.getElementById("audio2").style.width="100px";
+	document.getElementById("audio2").style.boxShadow="0px 0px 30px 2px #898989";
+	document.getElementById("audio2").style.fontSize="30px";
+	setTimeout("stop2()",36000);
+	}
+	if(clickTime2 == 2){
+	stop2();
+	}
+}
+
+function stop2(){
+	document.getElementById('audioPlay2').pause();
+	document.getElementById('audioPlay2').currentTime=0;
+	clickTime2 = 0;
+	document.getElementById("audio2").style.height="100px";
+	document.getElementById("audio2").style.width="80px";
+	document.getElementById("audio2").style.boxShadow="0px 0px 20px 10px #898989";
+	document.getElementById("audio2").style.fontSize="10px";
+	}
+</script>
+<script>
+	var clickTime3 = 0;
+	function playAudio3(){
+	clickTime3++;
+	console.log(clickTime3);
+	if(clickTime3==1){
+	document.getElementById('audioPlay3').play();
+	console.log(clickTime3);
+	document.getElementById("audio3").style.height="400px";
+	document.getElementById("audio3").style.width="100px";
+	document.getElementById("audio3").style.boxShadow="0px 0px 30px 2px #898989";
+	document.getElementById("audio3").style.fontSize="30px";
+	setTimeout("stop3()",32000);
+	}
+	if(clickTime3 == 2){
+	stop3();
+	}
+}
+
+function stop3(){
+	document.getElementById('audioPlay3').pause();
+	document.getElementById('audioPlay3').currentTime=0;
+	clickTime3 = 0;
+	document.getElementById("audio3").style.height="100px";
+	document.getElementById("audio3").style.width="80px";
+	document.getElementById("audio3").style.boxShadow="0px 0px 20px 10px #898989";
+	document.getElementById("audio3").style.fontSize="10px";
+	}
+</script>
+<script>
+	var clickTime4 = 0;
+	function playAudio4(){
+	clickTime4++;
+	console.log(clickTime4);
+	if(clickTime4==1){
+	document.getElementById('audioPlay4').play();
+	console.log(clickTime4);
+	document.getElementById("audio4").style.height="400px";
+	document.getElementById("audio4").style.width="100px";
+	document.getElementById("audio4").style.boxShadow="0px 0px 30px 2px #898989";
+	document.getElementById("audio4").style.fontSize="30px";
+	setTimeout("stop4()",33000);
+	}
+	if(clickTime4 == 2){
+	stop4();
+	}
+}
+
+function stop4(){
+	document.getElementById('audioPlay4').pause();
+	document.getElementById('audioPlay4').currentTime=0;
+	clickTime4 = 0;
+	document.getElementById("audio4").style.height="100px";
+	document.getElementById("audio4").style.width="80px";
+	document.getElementById("audio4").style.boxShadow="0px 0px 20px 10px #898989";
+	document.getElementById("audio4").style.fontSize="10px";
+	}
+</script>
+<script>
+	var clickTime5 = 0;
+	function playAudio5(){
+	clickTime5++;
+	console.log(clickTime5);
+	if(clickTime5==1){
+	document.getElementById('audioPlay5').play();
+	console.log(clickTime5);
+	document.getElementById("audio5").style.height="400px";
+	document.getElementById("audio5").style.width="100px";
+	document.getElementById("audio5").style.boxShadow="0px 0px 30px 2px #898989";
+	document.getElementById("audio5").style.fontSize="30px";
+	setTimeout("stop5()",55000);
+	}
+	if(clickTime5 == 2){
+	stop5();
+	}
+}
+
+function stop5(){
+	document.getElementById('audioPlay5').pause();
+	document.getElementById('audioPlay5').currentTime=0;
+	clickTime5 = 0;
+	document.getElementById("audio5").style.height="100px";
+	document.getElementById("audio5").style.width="80px";
+	document.getElementById("audio5").style.boxShadow="0px 0px 20px 10px #898989";
+	document.getElementById("audio5").style.fontSize="10px";
+	}
+</script>
+</body>
+</html>
